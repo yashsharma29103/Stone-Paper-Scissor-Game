@@ -15,7 +15,7 @@ def Final_Score():
     elif (marks.get())<(cmarks.get()):
         messagebox.showinfo("YOU LOOSE",("COMPUTER WON BY "+str(cmarks.get()-marks.get())+" POINTS."))
     else :
-        messagebox.showinfo("DRAW",("MATCH DRAWN WITH"+str(marks.get())+" POINTS."))
+        messagebox.showinfo("DRAW",("MATCH DRAWN WITH "+str(marks.get())+" POINTS."))
 
 def normalise():
     #setting default images
@@ -121,9 +121,9 @@ Vs.grid(row=2,column=2,rowspan=3)
 User = Label(root,image=userImg,bg="Light Blue")
 User.grid(row=2,rowspan=3,column=3)
 
-cname = Label(root,text="COMPUTER",font=("Monotype Corsiva",16))
+cname = Label(root,text="COMPUTER",bg="Light Blue",font=("Monotype Corsiva",16))
 cname.grid(row=5,column=1)
-uname = Label(root,text="YOU",font=("Monotype Corsiva",16))
+uname = Label(root,text="YOU",bg="Light Blue",font=("Monotype Corsiva",16))
 uname.grid(row=5,column=3)
 
 stnbut = Button(root,text="Stone",command=stone,bg="Light Blue",state=DISABLED,font=("Monotype Corsiva",16))
